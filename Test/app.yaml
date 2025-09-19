@@ -1,0 +1,8 @@
+runtime: java1.8
+instance_class: F1 #Бесплатный уровень
+automatic_scaling:
+  min_instances: 0 #Минимум 0, для экономии
+  max_instances: 1 #Ограничьте использование ресурсов
+handlers:
+  - url: /.*
+    script: auto
